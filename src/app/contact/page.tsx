@@ -74,7 +74,7 @@ export default function ContactPage() {
                 </div>
 
                 <h3 className="font-semibold text-lg mb-1">Call Us</h3>
-                <p className="text-muted-foreground">6360881181</p>
+                <p className="text-muted-foreground">+91 6360881181</p>
               </a>
 
               {/* WhatsApp */}
