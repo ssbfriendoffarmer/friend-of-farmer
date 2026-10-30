@@ -9,7 +9,6 @@ import {
   MessageSquare,
   ThumbsUp
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 export default function Footer() {
   return (
@@ -39,54 +38,42 @@ export default function Footer() {
               Premium organic vegetables harvested daily and delivered fresh to your doorstep. Supporting local farmers, building healthier communities.
             </p>
 
+            {/* Social Links */}
             <div className="flex gap-4">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-10 w-10 rounded-full bg-white/5 hover:bg-primary hover:text-white transition-colors"
-                asChild
-              >
-                <Link
-                  href="https://instagram.com/friendsoffarmer"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                >
-                  <Camera className="h-4 w-4" />
-                </Link>
-              </Button>
 
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-10 w-10 rounded-full bg-white/5 hover:bg-primary hover:text-white transition-colors"
-                asChild
+              {/* Instagram */}
+              <a
+                href="https://instagram.com/friendsoffarmer"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary hover:text-white transition-colors"
               >
-                <Link
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                >
-                  <ThumbsUp className="h-4 w-4" />
-                </Link>
-              </Button>
+                <Camera className="h-4 w-4" />
+              </a>
 
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-10 w-10 rounded-full bg-white/5 hover:bg-primary hover:text-white transition-colors"
-                asChild
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary hover:text-white transition-colors"
               >
-                <Link
-                  href="https://wa.me/916360881181"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="WhatsApp"
-                >
-                  <MessageSquare className="h-4 w-4" />
-                </Link>
-              </Button>
+                <ThumbsUp className="h-4 w-4" />
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/916360881181"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary hover:text-white transition-colors"
+              >
+                <MessageSquare className="h-4 w-4" />
+              </a>
+
             </div>
           </div>
 
@@ -137,7 +124,7 @@ export default function Footer() {
 
               {/* Address */}
               <li className="flex items-start gap-4">
-                <div className="mt-1 bg-white/10 p-2 rounded-lg">
+                <div className="mt-1 bg-white/10 p-2 rounded-lg shrink-0">
                   <MapPin className="h-4 w-4 text-primary" />
                 </div>
 
@@ -150,7 +137,7 @@ export default function Footer() {
 
               {/* Phone */}
               <li className="flex items-center gap-4">
-                <div className="bg-white/10 p-2 rounded-lg">
+                <div className="bg-white/10 p-2 rounded-lg shrink-0">
                   <Phone className="h-4 w-4 text-primary" />
                 </div>
 
